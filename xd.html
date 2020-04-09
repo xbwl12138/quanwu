@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://sn.189.cn/imCroePlatform/activity/kuanDaiWaiHuAll/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<title>下单</title>
+<link href="style/common.css" rel="stylesheet">
+<link href="style/index.css" rel="stylesheet">
+<script src="js/rem.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="xd_01">
+		<div class="tc_title">
+			<p>套餐名称</p>
+			<p>数量</p>
+			<p>价格</p>
+		</div>
+		<div class="tc_nrxx">
+			<p>一次性付费套餐</p>
+			<p>1</p>
+			<p>399元</p>
+		</div>
+		<p class="tcnr">套餐内容</p>
+		<div class="tcnr_js">
+			<p>1台WiFi双千兆路由器</p>
+			<p>30天天翼高清体验券</p>
+            <p>上门调测专属服务</p>
+		</div>
+	</div>
+	<div class="xd_02">
+		<div class="input_div input_div01">
+			<img class="input_title" src="img/kdzh.png"/>
+			<div class="sl_kdzh xz_kdzh"><input type="text" placeholder="请选择关联账户" /><img src="img/xl.png"></div> 
+		</div>
+		<div class="input_div">
+			<img class="input_title" src="img/dz.png"/>
+			<div class="sl_kdzh"><input type="text" placeholder="陕西省西安市金叶公寓16号楼454房" /></div> 
+		</div>
+	</div>
+	<div class="xd_03">
+		<div class="input_div input_div03">
+			<img class="input_title" src="img/zh.png"/>
+			<div class="sl_kdzh"><input type="text" placeholder="请输入联系人姓名" /></div> 
+		</div>
+		<div class="input_div">
+			<img class="input_title" src="img/dh.png"/>
+			<div class="sl_kdzh"><input type="text" placeholder="请输入联系人电话" /></div> 
+		</div>
+		<div class="input_div">
+			<img class="input_title" src="img/shdz.png"/>
+			<div class="sl_kdzh"><input type="text" placeholder="请输入收货地址" /></div> 
+		</div>	
+	</div>
+	<div class="xd_04">
+		<div class="input_div input_div04">
+			<img class="input_title" src="img/lb.png"/>
+			<div class="sl_kdzh"><input type="text" placeholder="礼包费用" /><p>399元</p></div> 
+		</div>
+	
+	</div>
+	<div class="xd_bt">
+		<p class="tc_fy">实付金额<span>¥599</span></p>
+	</div>
+	<!--宽带账号选择弹框-->
+    <div id="TB_overlayBG" style="display: none;"></div>
+	<div class="tk tk_kdzh">
+		<img class="kdzh_close" src="img/kdzh_close.png">
+		<div class="input_div input_div_tk input_div_tk01">
+			<img class="input_title" src="img/zh.png"/>
+			<div class="sl_kdzh sl_tk_kdzh"><input type="text" placeholder="029 8888 8888" /><img src="img/xz_kdzh.png"></div> 
+		</div>
+		<div class="input_div input_div_tk">
+			<img class="input_title" src="img/zh.png"/>
+			<div class="sl_kdzh sl_tk_kdzh"><input type="text" placeholder="029 8888 8888" /></div> 
+		</div>
+                
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery-common.js"></script>
+	<script type="text/javascript">
+		    $(function(){
+				// 弹出关闭层
+				$(".kdzh_close").click(function(){
+					hideDiv("tk");
+				});
+				$(".input_div01").click(function(){
+					showDiv("tk_kdzh");
+				});
+				
+			})
+		   
+
+	</script>
+	
+
+
+</body>
+</html>

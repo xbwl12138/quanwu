@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://sn.189.cn/imCroePlatform/activity/kuanDaiWaiHuAll/index.html -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<title>全屋wifi</title>
+	<link href="style/common.css" rel="stylesheet">
+	<link href="style/index.css" rel="stylesheet">
+</head>
+
+<body class="index">
+	<a class="email" href="javascript:void(0)"></a>
+	<img src="img/zf_banner.png" />
+	<img src="img/zf_gy.png" style="width:90%; margin: 0 auto;" />
+	<img src="img/zf_ly.png" style="width:90%; margin: 30px auto 0;" />
+	<div class="sheet">
+		<div class="sheet_box">
+			<div class="sheet_left fl"></div>
+			<div class="sheet_right fr"></div>
+		</div>
+	</div>
+
+	<!--新裝区域-->
+	<div class="fpnr fpnr0">
+		<div class="tc tc_399"><img class="yx" src="img/yx.png" style="display: none;" /></div>
+		<div class="tc tc_698"><img class="yx" src="img/yx.png" style="display: none;" /></div>
+		<div class="tc tc_897"><img class="yx" src="img/yx.png" style="display: none;" /></div>
+
+	</div>
+
+
+	<!--加裝内容区域-->
+	<div class="fpnr fpnr1" style="display: none;">
+		<div class="tc tc_299"><img class="yx" src="img/yx.png" /></div>
+		<div class="tc tc_498"></div>
+
+	</div>
+	<img src="img/ywsm.png" style="width:90%; margin: 20px auto 30px;" />
+	<img src="img/fwlc.png" style="width:90%; margin: 20px auto 30px;" />
+	<div class="ljbl_bt">
+		<p class="tc_fy"><span>599</span>元礼包</p>
+	</div>
+
+	<!--登录弹框-->
+	<div id="TB_overlayBG" style="display: none;"></div>
+	<div class="tk tk_dx">
+		<ul class="ban_pag">
+			<li class="on">手机登录</li>
+			<li>宽带登录</li>
+		</ul>
+		<div id="ranking_0" class="login">
+			<div class="song_box" style="margin-top:30px;">
+				<span><img src="img/sjdl_hm.png" /></span>
+				<input type="text" placeholder="请输入手机号码" />
+			</div>
+			<div class="song_box yz">
+				<span><img src="img/sjdl_yzm.png" /></span>
+				<input type="text" placeholder="请输入验证码" /><span class="msgs">获取验证码</span>
+			</div>
+		</div>
+		<div id="ranking_1" class="login" style="display: none;">
+			<div class="song_box" style="margin-top: 15px;">
+				<span><img src="img/sjdl_ds.png" style="margin-top: 4px;" /></span>
+				<select>
+					<option value="">陕西省</option>
+				</select>
+				<select>
+					<option value="">西安市</option>
+				</select>
+			</div>
+			<div class="song_box">
+				<span><img src="img/sjdl_hm.png" /></span>
+				<input type="text" placeholder="请输入宽带账号" />
+			</div>
+			<div class="song_box">
+				<span><img src="img/sjdl_yzm.png" /></span>
+				<input type="text" placeholder="请输入宽带密码" />
+			</div>
+		</div>
+
+		<p class="fillBtm" style="margin-left: 10%;">
+			<a class="btn_ok back"><img src="img/tk_back.png" /></a>
+		</p>
+		<p class="fillBtm">
+			<a href="lrxx.html" class="btn_ok"><img src="img/tk_next.png" /></a>
+		</p>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		//sheet点击切换换图片
+		$(".sheet_left").click(function () {
+			$(this).css({
+				"background-image": "url(img/zf_xztc.png)",
+				"width": "53%"
+			});
+			$(".sheet_right").css({
+				"background-image": "none",
+				"width": "47%"
+			});
+		});
+		$(".sheet_right").click(function () {
+			$(this).css({
+				"background-image": "url(img/zf_jztc.png)",
+				"width": "53%"
+			});
+			$(".sheet_left").css({
+				"background-image": "none",
+				"width": "47%"
+			});
+		});
+
+		/*sheet表切换*/
+		$(function () {
+			$('.sheet_box div').click(function () {
+				var i = $(this).index();
+				$('.fpnr').hide() && $('.fpnr' + i).show();
+			});
+		});
+		$(".tc_399").click(function () {
+			// console.log($(this)[0].children[0].src)
+			$(this)[0].children[0].style = "display:block";
+			$(".tc_698")[0].children[0].style = "display:none";
+			$(".tc_897")[0].children[0].style = "display:none";
+		});
+		$(".tc_698").click(function () {
+			$(this)[0].children[0].style = "display:block";
+			$(".tc_399")[0].children[0].style = "display:none";
+			$(".tc_897")[0].children[0].style = "display:none";
+		});
+		$(".tc_897").click(function () {
+			$(this)[0].children[0].style = "display:block";
+			$(".tc_399")[0].children[0].style = "display:none";
+			$(".tc_698")[0].children[0].style = "display:none";
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery-common.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			// 弹出关闭层
+			$(".close_btn").click(function () {
+				hideDiv("tk");
+			});
+			$(".back").click(function () {
+				hideDiv("tk");
+			});
+			$(".ljbl_bt").click(function () {
+				showDiv("tk_dx");
+			});
+
+		})
+
+
+		$(function () {
+			$(".ban_pag li").click(function () {
+				$(this).addClass("on").siblings().removeClass("on");
+			});
+			$(".ban_pag li").click(function () {
+				var _ind = $(this).index();
+				$(this).addClass("on").siblings().removeClass("on");
+				$(".login").hide() && $("#ranking_" + _ind).show();
+			});
+		})
+
+		$(function () {
+			//获取短信验证码
+			var validCode = true;
+			$(".msgs").click(function () {
+				var time = 30;
+				var code = $(this);
+				if (validCode) {
+					validCode = false;
+					code.addClass("msgs1");
+					var t = setInterval(function () {
+						time--;
+						code.html(time + "秒");
+						if (time == 0) {
+							clearInterval(t);
+							code.html("重新获取");
+							validCode = true;
+							code.removeClass("msgs1");
+
+						}
+					}, 1000)
+				}
+			})
+		})
+	</script>
+
+
+
+</body>
+
+</html>
